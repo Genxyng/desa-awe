@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Awe</title>
+
+    <!-- Link Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <style>
+        .navbar {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            background-color: #343a40 !important;
+        }
+
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: #ffffff !important;
+        }
+
+        .content-section {
+            margin-top: 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .table-container {
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .table thead {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f8f9fa;
+            transition: 0.3s ease-in-out;
+        }
+
+        .table td, .table th {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .table td {
+            font-weight: bold;
+        }
+
+        .bpd-members td {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #343a40;
+            padding: 2rem 0;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 100px;
+        }
+
+        footer h5 {
+            font-weight: bold;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Desa Awe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarProfil">
+                            <li><a class="dropdown-item" href="/profil/sejarah">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="/profil/visi-misi">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="/profil/alamat">Alamat & Lokasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/pejabat">Pejabat</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarFasilitas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fasilitas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarFasilitas">
+                            <li><a class="dropdown-item" href="/fasilitas/pendidikan">Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="/fasilitas/kesehatan">Kesehatan</a></li>
+                            <li><a class="dropdown-item" href="/fasilitas/kegiatan">Kegiatan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container content-section">
+        
+        <h1 class="section-title">Aparatur Desa Awe</h1>
+
+        <div class="text-center">
+            <p class="section-content">
+                Aparatur Desa Awe terdiri dari beberapa jabatan penting yang bekerja untuk memastikan kelancaran administrasi dan pelayanan masyarakat. Berikut adalah Aparatur desa kami:
+            </p>
+        </div>
+
+        <div class="table-container">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Jabatan</th>
+                        <th>Nama</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kepala Desa</td>
+                        <td>Adhar</td>
+                    </tr>
+                    <tr>
+                        <td>Tgk Imum</td>
+                        <td>Tgk. Muzakir</td>
+                    </tr>
+                    <tr>
+                        <td>Sekretaris Desa</td>
+                        <td>Reza Maulana</td>
+                    </tr>
+                    <tr>
+                        <td>Bendahara</td>
+                        <td>Murtalabuddin</td>
+                    </tr>
+                    <tr>
+                        <td>BPD/Tuha Peut (Ketua)</td>
+                        <td>Basyarudin s.pd</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7" class="align-middle">Anggota BPD/Tuha Peut</td>
+                        <td>Yusri</td>
+                    </tr>
+                    <tr><td>Yusrizal sp</td></tr>
+                    <tr><td>Abdul ghani amin</td></tr>
+                    <tr><td>Nasrudin</td></tr>
+                    <tr><td>Abdullah</td></tr>
+                    <tr><td>husna</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>AWE</h5>
+                    <p>Gampong Awe, Kecamatan Syamtalira Aron</p>
+                    <p>Kabupaten Aceh Utara, Provinsi Aceh</p>
+                    <p>Email: info@gampongawe.com | Telepon: +62 852-1234-5678</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Desa Awe. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

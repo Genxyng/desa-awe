@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alamat & Lokasi Desa Awe</title>
+
+    <!-- Link Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Custom CSS untuk memperbesar navbar -->
+    <style>
+        /* Memperbesar ukuran font dan padding navbar */
+        .navbar {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            background-color: #343a40 !important;
+        }
+
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: #ffffff !important;
+        }
+
+        /* Styling untuk konten Alamat & Lokasi */
+        .content-section {
+            margin-top: 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .map-container {
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: #343a40;
+            padding: 2rem 0;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 100px;
+        }
+
+        footer h5 {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar Bootstrap yang dipusatkan -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Desa Awe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarProfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarProfil">
+                            <li><a class="dropdown-item" href="/profil/sejarah">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="/profil/visi-misi">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="/profil/alamat">Alamat & Lokasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/pejabat">Pejabat</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarFasilitas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fasilitas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarFasilitas">
+                            <li><a class="dropdown-item" href="/fasilitas/pendidikan">Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="/fasilitas/kesehatan">Kesehatan</a></li>
+                            <li><a class="dropdown-item" href="/fasilitas/kegiatan">Kegiatan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Alamat & Lokasi -->
+    <div class="container content-section">
+        <div class="text-center">
+            <h1 class="section-title">Alamat & Lokasi Desa Awe</h1>
+            <p class="section-content">
+                <strong>Desa Awe, Kecamatan Syamtalira Aron, Kabupaten Aceh Utara, Aceh, 24391.</strong>
+                <br><br>
+            </p>
+        </div>
+        <!-- Peta Lokasi -->
+        <div class="map-container text-center">
+            <h3>Lokasi di Peta</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126313.78073856684!2d97.2462141!3d5.1087112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304785e46769170b%3A0x9e8d7a4b14376590!2sAwe%2C%20Syamtalira%20Aron%2C%20North%20Aceh%20Regency%2C%20Aceh!5e0!3m2!1sen!2sid!4v1674059070542!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>AWE</h5>
+                    <p>Gampong Awe, Kecamatan Syamtalira Aron</p>
+                    <p>Kabupaten Aceh Utara, Provinsi Aceh</p>
+                    <p>Email: info@gampongawe.com | Telepon: +62 852-1234-5678</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Desa Awe. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
